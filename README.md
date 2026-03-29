@@ -185,18 +185,18 @@ git clone https://github.com/Shaheedsvnr/product-analytics-dashboard.git
 cd product-analytics-dashboard
 
 # 3. Install dependencies
-
+```bash
 npm install
-
+```
 # 4. Run development server
-
+```bash
 npm run dev
-
-Build for production
-
+```
+# 5. Build for production
+```bash
 npm run build
 npm run start
-
+```
 #### Architecture Explanation
 
 The system follows a layered, unidirectional data flow architecture:
