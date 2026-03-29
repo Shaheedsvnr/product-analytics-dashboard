@@ -197,6 +197,9 @@ npm run dev
 npm run build
 npm run start
 ```
+## Live Demo
+- https://product-analytics-dashboard-lime.vercel.app
+
 #### Architecture Explanation
 
 The system follows a layered, unidirectional data flow architecture:
