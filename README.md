@@ -1,7 +1,7 @@
 # Product Analytics Dashboard
 
 A high-performance **Next.js + Zustand analytics dashboard** for product filtering, aggregation, and visualization.  
-Designed with a strong focus on **scalability, performance optimization, and production-grade frontend architecture**.
+Designed with a strong focus on **scalability, performance optimization, and production-grade frontend architecture**. Built as part of a frontend engineering assessment focused on performance, scalability, and UI architecture.
 
 ---
 
@@ -77,6 +77,7 @@ Zustand Store → useFilteredProducts → filterProducts → getAnalytics → Ne
 - Pure functions for deterministic computation
 - Virtualized rendering for large datasets
 - Controlled rendering via Zustand selectors
+- Mobile-first responsive layout ensuring smooth filtering and chart rendering across all screen sizes
 
 ---
 
@@ -153,9 +154,7 @@ Transforms raw product data into structured insights:
 
 ## Tech Stack
 
-**Next.js (App Router)** • Zustand • Recharts • Vitest • React Virtuoso • Tailwind CSS • Iconify
-
----
+Next.js (App Router) • Zustand • Recharts • Vitest • React Virtuoso • Tailwind CSS • Iconify • PWA
 
 ## Key Engineering Decisions
 
@@ -165,6 +164,7 @@ Transforms raw product data into structured insights:
 - Virtualization for scalable rendering
 - Debounced filtering for performance optimization
 - Strict unidirectional data flow architecture
+- Progressive Web App (PWA) enabled for improved mobile usability and installable experience
 
 ---
 
@@ -174,31 +174,60 @@ Transforms raw product data into structured insights:
 npm run test
 ```
 
-#### Setup Instructions
+## Setup Instructions
 
-# 1. Clone the repository
+### 1. Clone the repository
 
-git clone https://github.com/Shaheedsvnr/product-analytics-dashboard.git
+🔗 Repository: https://github.com/Shaheedsvnr/product-analytics-dashboard
 
 # 2. Navigate into the project
 
 cd product-analytics-dashboard
 
 # 3. Install dependencies
+
 ```bash
 npm install
 ```
+
 # 4. Run development server
+
 ```bash
 npm run dev
 ```
+
 # 5. Build for production
+
 ```bash
 npm run build
 npm run start
 ```
-## Live Demo
-- https://product-analytics-dashboard-lime.vercel.app
+
+## Live Demo & UI Preview
+
+> Fully responsive design with optimized layouts for both desktop and mobile screens.
+
+- 🔗 [Live Demo](https://product-analytics-dashboard-lime.vercel.app)
+
+---
+
+## Screenshots
+
+### Dashboard (Desktop View)
+
+![Dashboard Desktop](./screenshots/dashboard-desktop.png)
+
+### Dashboard (Mobile View)
+
+![Dashboard Mobile](./screenshots/dashboard-mobile.jpeg)
+
+### Analytics View
+
+![Analytics](./screenshots/analytics.png)
+
+> These screenshots demonstrate real-time filtering, analytics aggregation, and responsive UI behavior.
+
+---
 
 #### Architecture Explanation
 
@@ -257,3 +286,9 @@ The application is optimized for large-scale datasets (1000+ products) using:
 - Simpler than WebSocket-based architecture
 - Slight memory overhead due to memoization
 - Virtualization adds external dependency
+
+---
+
+## Author
+
+Frontend Developer focused on performance-driven React applications and scalable UI systems.
