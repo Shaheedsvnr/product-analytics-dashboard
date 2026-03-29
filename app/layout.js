@@ -27,15 +27,31 @@ export const metadata = {
   ],
   authors: [{ name: "Mahammad Shaheed" }],
   creator: "Mahammad Shaheed",
+
   metadataBase: new URL("http://localhost:3000"),
+
+  // PWA + Theme Color
+  manifest: "/manifest.json",
+
+  // Open Graph
   openGraph: {
     title: "Product Analytics Dashboard",
     description:
       "Scalable product analytics dashboard with real-time updates and advanced filtering.",
     type: "website",
   },
+
+  // Icons
   icons: {
     icon: "/favicon.ico",
+    apple: "/icons/icon-192.png",
+  },
+
+  // Mobile / Apple PWA Support
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Product Dashboard",
   },
 };
 
