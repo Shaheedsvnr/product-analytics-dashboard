@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+/* ---------------- SCROLL BUTTON ---------------- */
+
+.scroll-btn {
+  opacity: 0;
+  transform: translateY(24px) scale(0.95);
+  pointer-events: none;
+
+  transition:
+    opacity 300ms ease,
+    transform 300ms ease,
+    box-shadow 200ms ease,
+    background-color 200ms ease;
+}
+
+/* SHOW (slide up + fade in) */
+.scroll-btn.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+
+  animation: softEnter 0.35s ease-out;
+}
+
+/* HOVER */
+.scroll-btn:hover {
+  transform: translateY(-3px) scale(1.08);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  background-color: #1e293b;
+}
+
+/* ACTIVE */
+.scroll-btn:active {
+  transform: translateY(0px) scale(0.96);
+  transition: transform 120ms ease;
+}
+
+/* ENTRY ANIMATION */
+@keyframes softEnter {
+  0% {
+    opacity: 0;
+    transform: translateY(24px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
