@@ -178,7 +178,7 @@ npm run test
 
 # 1. Clone the repository
 
-git clone https://github.com/your-username/product-analytics-dashboard.git
+git clone https://github.com/Shaheedsvnr/product-analytics-dashboard.git
 
 # 2. Navigate into the project
 
